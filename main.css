@@ -1,0 +1,202 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 120%;
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Verdana', sans-serif;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 1280px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+}
+
+
+.logo-hover {
+  top: 0;
+  left: 0;
+  display: none;
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+
+.logo-link:hover .logo {
+  display: none;
+}
+
+.logo-link:hover .logo-hover {
+  display: block;
+}
+
+.header {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__left-milan:hover {
+  color: #f26522;
+}
+
+.header__left-holidays:hover {
+  color: #f26522;
+}
+
+.header__left-milan {
+  font-weight: bold;
+  font-size: 29px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.header__left-holidays {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-email {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact-phone {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 74px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 18px;
+  margin-left: 600px;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.333% - 150px);
+  float: left;
+  box-sizing: border-box;
+  margin: 40px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.info-banner {
+  display: none;
+  position: absolute;
+  bottom: 24%;
+  left: 0;
+  width: 100%;
+  background-color: #f26522;
+  color: white;
+  padding: 10px 0;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card__link:hover .info-banner {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card__link:hover .info-banner {
+  display: block;
+}
+
+.info-price {
+  font-size: 20px;
+  display: block;
+  text-align: left;
+}
+
+.info-details {
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+}
+
+
+.card__img {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  border: 1px solid transparent;
+  padding: 5px;
+  box-sizing: border-box;
+  border-image: linear-gradient(to right, #ECECEC, #FFFFFF, #ECECEC) 1;
+}
+
+.card__img:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #f26522;
+}
+
+
+.card__text {
+  font-size: 18px;
+}
+
+.card:hover .card__text {
+  color: #f26522;
+}
+
+.footer {
+  margin-top: 650px;
+}
+
+.footer__text {
+  font-size: 12px;
+  text-align: center;
+}
